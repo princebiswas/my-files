@@ -1,0 +1,7 @@
+<suite name = "Ebay Test Suite">
+    <test name = "Ebay Automated Test">
+        <clases>
+            <class name = "runner.TestRunner"/>
+        </clases>
+    </test>
+</suite>

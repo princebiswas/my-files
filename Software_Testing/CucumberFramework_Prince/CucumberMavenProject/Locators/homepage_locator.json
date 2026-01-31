@@ -1,0 +1,31 @@
+{
+  "ShopByCategory": {
+    "type": "xpath",
+    "value": "//span[contains(text(),'Shop by category')]"
+  },
+  
+  "Motorcycle": {
+    "type": "xpath",
+    "value": "//a[contains(text(),'Motorcycles')]"
+  },
+
+  "SelectMakeFromDropdown": {
+    "type": "xpath",
+    "value": "(//select[@control-type='select'])[1]"
+  },
+
+  "zipCode": {
+    "type": "xpath",
+    "value": "(//input[@placeholder='ZIP Code (Optional)'])[1]"
+  },
+
+  "SelectModelFromDropdown": {
+    "type": "xpath",
+    "value": "(//select[@control-type='select'])[2]"
+  },
+
+  "Conditions": {
+    "type": "xpath",
+    "value": "(//input[@placeholder='ZIP Code (Optional)'])[1]"
+  }
+}

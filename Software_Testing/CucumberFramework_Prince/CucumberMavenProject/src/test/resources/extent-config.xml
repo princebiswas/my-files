@@ -1,0 +1,8 @@
+<configuration>
+    <theme>standard</theme>
+    <documentTitle>Amazon Cucumber Test Report</documentTitle>
+    <reportName>Amazon Search Automation</reportName>
+    <encoding>utf-8</encoding>
+    <protocol>https</protocol>
+    <timeStampFormat>MMM dd, yyyy HH:mm:ss</timeStampFormat>
+</configuration>

@@ -1,0 +1,15 @@
+{
+  "SearchForAProduct": {
+    "type": "xpath",
+    "value": "//input[@placeholder='Search for anything']"
+  },
+  "ClickOnSearchbutton": {
+    "type": "xpath",
+    "value": "(//span[contains(text(),'Search')])[1]"
+  },
+
+  "SearchHeader": {
+    "type": "xpath",
+    "value": "(//div[@class='srp-controls__control srp-controls__count']//span)[2]"
+  }
+}

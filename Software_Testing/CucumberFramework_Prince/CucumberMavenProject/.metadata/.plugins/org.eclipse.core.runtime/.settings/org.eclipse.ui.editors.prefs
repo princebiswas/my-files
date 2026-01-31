@@ -1,0 +1,4 @@
+AbstractTextEditor.Color.Background=192,192,192
+AbstractTextEditor.Color.Foreground=0,0,64
+currentLineColor=128,255,128
+eclipse.preferences.version=1
