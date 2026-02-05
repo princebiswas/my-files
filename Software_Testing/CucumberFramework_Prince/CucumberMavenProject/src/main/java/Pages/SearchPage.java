@@ -9,6 +9,13 @@ public class SearchPage extends BasePage {
         super(driver,"Searchpage_locator.json");
     }
 
+
+
+    public String getSearchHeader()    {
+        return getElement("SearchHeader").getText();
+    }
+    //return getElement("SearchHeader").getText();
+
     public void SearchForAProduct(String Product) {
         getElement("SearchForAProduct").sendKeys(Product);
     }
@@ -16,16 +23,5 @@ public class SearchPage extends BasePage {
     public void ClickOnSearchbutton() {
         getElement("ClickOnSearchbutton").click();
     }
-
-   // public String getSearchHeader() {
-   //    return getElement("SearchHeader").getText();
-   // }
-
-    public String getSearchHeader()    {
-       String ExpectedValue=  getElement("SearchHeader").getText();
-       return ExpectedValue;
-    }
-
-
 
 }

@@ -38,7 +38,7 @@ public class BasePage {
     {
         WebElement dropdown = getElement(key);
         Select select = new Select(dropdown);
-        select.selectByVisibleText(VisibleText);
+        select.selectByValue(VisibleText);
     }
 
 

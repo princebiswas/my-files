@@ -12,6 +12,6 @@ Feature: Test all scenario for Home Page
     And I select Conditions from dropdown <Conditions>
 	Examples:
 	|Product1   |Make   |Model  |Conditions|
-	|Motorcycle |BMW    |120i  |New       |
+	|Motorcycle |BMW    |120i  |1000      |
 
 

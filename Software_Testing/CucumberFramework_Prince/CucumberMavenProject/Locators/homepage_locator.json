@@ -14,7 +14,7 @@
     "value": "(//select[@control-type='select'])[1]"
   },
 
-  "zipCode": {
+  "ZipCode": {
     "type": "xpath",
     "value": "(//input[@placeholder='ZIP Code (Optional)'])[1]"
   },
@@ -26,6 +26,6 @@
 
   "Conditions": {
     "type": "xpath",
-    "value": "(//input[@placeholder='ZIP Code (Optional)'])[1]"
+    "value": "(//select[@control-type='select'])[3]"
   }
 }

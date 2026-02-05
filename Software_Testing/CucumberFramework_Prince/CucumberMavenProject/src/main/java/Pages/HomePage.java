@@ -21,23 +21,25 @@ public class HomePage extends BasePage {
         getElement("Motorcycle").click();
 	}
 	
-	public void enterZipCode()
-	{
+	public void enterZipCode()	{
+		getElement("ZipCode").clear();
 		getElement("ZipCode").sendKeys("20903");
 	}
 
-
 	public void selectConditions(String conditions) {
-
 		//getElement("Conditions").click();
 		SelectDropdownByVisibleText("Conditions", conditions);
 	}
 
 	public void iSelectMakeFromDropdown(String Make) {
+
 		SelectDropdownByVisibleText("SelectMakeFromDropdown", Make);
 	}
 
 	public void selectModel(String Model) {
+
 		SelectDropdownByVisibleText("SelectModelFromDropdown", Model);
 	}
+
+
 }
