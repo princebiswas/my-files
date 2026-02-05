@@ -1,26 +1,19 @@
 package stepdefinations;
 
-import Pages.BasePage;
 import Pages.HomePage;
 
-import Pages.SearchPage;
+import Pages.FindAVehiclePage;
 import hooks.TestHooks;
-import io.cucumber.java.PendingException;
 import io.cucumber.java.en.And;
 import io.cucumber.java.en.Given;
-import io.cucumber.java.en.Then;
-import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
-import org.openqa.selenium.WebElement;
-
-import java.util.List;
 
 import static org.junit.jupiter.api.Assertions.assertEquals;
 
 public class HomePageStepsDef  {
 
     HomePage homepage;
-    SearchPage searchpage;
+    FindAVehiclePage searchpage;
     WebDriver driver = TestHooks.driver;
 
     @Given("I navigate to the Ebay UI")

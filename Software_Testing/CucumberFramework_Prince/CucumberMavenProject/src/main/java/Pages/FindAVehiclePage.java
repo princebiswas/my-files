@@ -2,16 +2,16 @@ package Pages;
 
 import org.openqa.selenium.WebDriver;
 
-public class SearchPage extends BasePage {
+public class FindAVehiclePage extends BasePage {
 
 
-    public SearchPage(WebDriver driver) {
-        super(driver,"Searchpage_locator.json");
+    public FindAVehiclePage(WebDriver driver) {
+
+        super(driver,"find_a_vehicle_locator.json");
     }
 
-
-
     public String getSearchHeader()    {
+
         return getElement("SearchHeader").getText();
     }
     //return getElement("SearchHeader").getText();
@@ -21,6 +21,7 @@ public class SearchPage extends BasePage {
     }
 
     public void ClickOnSearchbutton() {
+
         getElement("ClickOnSearchbutton").click();
     }
 

@@ -7,35 +7,34 @@ import io.cucumber.java.en.Then;
 import org.openqa.selenium.WebDriver;
 
 import Pages.HomePage;
-import Pages.SearchPage;
+import Pages.FindAVehiclePage;
 import hooks.TestHooks;
 import io.cucumber.java.en.And;
-import org.testng.Assert;
 
-public class SearchPageStepDef {
+public class FindAVehicleStepDef {
 	
 
-	 SearchPage searchpage;
+	 FindAVehiclePage fav;
 	 HomePage homepage;
 
 	 WebDriver driver = TestHooks.driver;
 
 	@And("Search for a Product(.*)$" )
 	public void iSearchForAProduct(String Product) throws InterruptedException {
-		searchpage.SearchForAProduct(Product);
+		fav.SearchForAProduct(Product);
 		Thread.sleep(1000);
 	}
 
 	@And("Click on Search")
 	public void ClickOnSearchbutton() throws InterruptedException {
-		searchpage.ClickOnSearchbutton();
+		fav.ClickOnSearchbutton();
 		homepage = new HomePage(driver);
 		Thread.sleep(1000);
 	}
 	@Then("I should see the result in search page for validation (.*)$")
 	public void I_should_see_the_result_in_search_page_for_validation(String Product) throws InterruptedException {
 		// assertTrue(searchpage.getSearchHeader().contains(Product));
-		assertEquals(searchpage.getSearchHeader(),Product);
+		assertEquals(fav.getSearchHeader(),Product);
 		Thread.sleep(1000);
 	}
 }

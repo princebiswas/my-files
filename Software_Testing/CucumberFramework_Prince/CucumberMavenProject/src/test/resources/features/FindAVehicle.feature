@@ -1,5 +1,5 @@
 
-Feature: Test all scenario for Search Page
+Feature: Test all scenario for Find a Vehicle
 
   @Smoke
   Scenario Outline: Verify the user can search for Products
