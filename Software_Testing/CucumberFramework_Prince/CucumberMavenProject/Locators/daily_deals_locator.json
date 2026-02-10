@@ -1,0 +1,6 @@
+{
+  "SearchDeals": {
+    "type": "xpath",
+    "value": "(//a[contains(text(),'Deals')])[2]"
+  }
+}
