@@ -2,7 +2,7 @@ package stepdefinations;
 
 import Pages.HomePage;
 
-import Pages.FindAVehiclePage;
+
 import hooks.TestHooks;
 import io.cucumber.java.en.And;
 import io.cucumber.java.en.Given;
@@ -13,7 +13,6 @@ import static org.junit.jupiter.api.Assertions.assertEquals;
 public class HomePageStepsDef  {
 
     HomePage homepage;
-    FindAVehiclePage searchpage;
     WebDriver driver = TestHooks.driver;
 
     @Given("I navigate to the Ebay UI")

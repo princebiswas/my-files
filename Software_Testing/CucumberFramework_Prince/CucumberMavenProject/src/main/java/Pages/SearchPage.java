@@ -2,12 +2,12 @@ package Pages;
 
 import org.openqa.selenium.WebDriver;
 
-public class FindAVehiclePage extends BasePage {
+public class SearchPage extends BasePage {
 
 
-    public FindAVehiclePage(WebDriver driver) {
+    public SearchPage(WebDriver driver) {
 
-        super(driver,"find_a_vehicle_locator.json");
+        super(driver,"SearchPage_locator.json");
     }
 
     public String getSearchHeader()    {

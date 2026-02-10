@@ -8,17 +8,16 @@ public class HomePage extends BasePage {
 		super(driver,"homepage_locator.json");
 		
 	}
-
-
-
 	public void ShopByCategory()
 	{
-        getElement("ShopByCategory").click();
+
+		getElement("ShopByCategory").click();
 	}
 	
 	public void SelectProduct(String Product1)
 	{
-        getElement("Motorcycle").click();
+
+		getElement("Motorcycle").click();
 	}
 	
 	public void enterZipCode()	{

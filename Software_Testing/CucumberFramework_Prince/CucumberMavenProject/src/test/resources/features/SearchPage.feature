@@ -11,7 +11,13 @@ Feature: Test all scenario for Find a Vehicle
       |Product|
       |Motorcycle|
 
-
+  @Smoke
+  Scenario Outline: Verify the user can search for Products
+    Given I navigate to the Ebay UI
+    And Search for a Product <Product>
+    Examples:
+      |Product      |
+      |Cars trucks  |
 
 	
 
