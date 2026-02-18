@@ -5,11 +5,39 @@
   },
   "ClickOnSearchbutton": {
     "type": "xpath",
-    "value": "(//span[contains(text(),'Search')])[1]"
+    "value": "//button[@value='Search']"
   },
 
   "SearchHeader": {
     "type": "xpath",
     "value": "(//div[@class='srp-controls__control srp-controls__count']//span)[2]"
+  },
+
+  "SelectYearForm": {
+    "type": "xpath",
+    "value": "//input[@aria-label='Year From']"
+  },
+
+  "SelectYearTo": {
+    "type": "xpath",
+    "value": "//input[@aria-label='Year To']"
+  },
+
+  "SelectDistance": {
+    "type": "xpath",
+    "value": "//select[@aria-label='Distance']"
+  },
+
+  "ClickOnFindVehicleButton": {
+    "type": "xpath",
+    "value": "//button[@class='btn btn--primary btn--fluid uf-template-vehicle-finder__action--find']"
+  },
+
+  "make_Dropdown": {
+    "type": "xpath",
+    "value":"//select[@aria-label='Make']"
   }
+
+
+
 }

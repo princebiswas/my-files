@@ -27,12 +27,12 @@ public class HomePage extends BasePage {
 
 	public void selectConditions(String conditions) {
 		//getElement("Conditions").click();
-		SelectDropdownByVisibleText("Conditions", conditions);
+		SelectDropdownByValue("Conditions", conditions);
 	}
 
 	public void iSelectMakeFromDropdown(String Make) {
 
-		SelectDropdownByVisibleText("SelectMakeFromDropdown", Make);
+		SelectDropdownByValue("SelectMakeFromDropdown", Make);
 	}
 
 	public void selectModel(String Model) {

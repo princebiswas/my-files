@@ -17,7 +17,7 @@ public class HomePageStepsDef  {
 
     @Given("I navigate to the Ebay UI")
     public void iNavigateToTheEbayUI() {
-        driver.get("https://www.ebay.com/");
+       // driver.get("https://www.ebay.com/");
         homepage = new HomePage(driver);
     }
     @And("I click on Shop by category")

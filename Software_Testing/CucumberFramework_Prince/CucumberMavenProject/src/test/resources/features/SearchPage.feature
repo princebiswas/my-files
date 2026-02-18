@@ -1,23 +1,26 @@
 
 Feature: Test all scenario for Find a Vehicle
 
-  @Smoke
+  @Smoke @All
   Scenario Outline: Verify the user can search for Products
     Given I navigate to the Ebay UI
     And Search for a Product <Product>
     And Click on Search
     Then I should see the result in search page for validation <Product>
-    Examples:
-      |Product|
-      |Motorcycle|
+    Then I select Make_from dropdown <Make>
+    And I select Model from dropdown <Model>
+    And I enter Year From <YearFrom>
+    And I enter Year To <YearTo>
+    And I select Distance from dropdown <Distance>
+    And I enter ZIP code
+    Then I click on Find Vehicle button
 
-  @Smoke
-  Scenario Outline: Verify the user can search for Products
-    Given I navigate to the Ebay UI
-    And Search for a Product <Product>
     Examples:
-      |Product      |
-      |Cars trucks  |
+      |Product    |Make|Model|YearTo|YearFrom|YearTo|Distance|
+      |Motorcycle |Audi|A1   |2000  |2000    |2020 |1000 miles|
+
+
+
 
 	
 

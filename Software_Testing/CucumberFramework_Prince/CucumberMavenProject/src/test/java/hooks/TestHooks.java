@@ -1,5 +1,6 @@
 package hooks;
 
+import java.io.IOException;
 import java.nio.file.Files;
 import java.nio.file.Path;
 import java.time.LocalDateTime;
@@ -14,6 +15,7 @@ import io.cucumber.java.After;
 import io.cucumber.java.AfterStep;
 import io.cucumber.java.Before;
 import io.cucumber.java.Scenario;
+import utility.ConfigReader;
 
 public class TestHooks {
 	
@@ -21,10 +23,12 @@ public class TestHooks {
 	
 	
 	@Before
-	public void SetUp()
-	{
+	public void SetUp() throws IOException {
 		
 		driver = new ChromeDriver();
+		ConfigReader.loadConfig();
+		driver.get(ConfigReader.getBaseUrl());
+		driver.manage().window().maximize();
 	}
 	
 	@AfterStep

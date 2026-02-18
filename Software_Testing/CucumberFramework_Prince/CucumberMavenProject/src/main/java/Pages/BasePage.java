@@ -1,5 +1,6 @@
 package Pages;
 
+import lombok.Value;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
@@ -34,12 +35,23 @@ public class BasePage {
 		}
 	}
 
-    public void SelectDropdownByVisibleText(String key, String VisibleText)
+    public void SelectDropdownByValue(String key, String Value)
     {
         WebElement dropdown = getElement(key);
         Select select = new Select(dropdown);
-        select.selectByValue(VisibleText);
+        select.selectByValue(Value);
     }
+
+	public void SelectDropdownByVisibleText(String key, String VisibleText)
+	{
+		WebElement dropdown = getElement(key);
+		Select select = new Select(dropdown);
+		select.selectByVisibleText(VisibleText);
+	}
+
+
+
+
 
 
 

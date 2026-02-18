@@ -12,15 +12,10 @@ public class DailyDealsStepDef {
     DailyDealsPage ddp;
     WebDriver driver = TestHooks.driver;
 
-    @Given("I should see the result in search page for validation")
-    public void i_should_see_the_result_in_search_page_for_validation() {
-       ddp = new DailyDealsPage(driver);
-       ddp.DealHeader();
-    }
-
-
-    @And("I click on Featured")
-    public void i_click_on_Featured() {
+    @And("I hover on Featured")
+    public void i_hover_on_Featured() {
+        ddp = new DailyDealsPage(driver);
+        ddp.hover_featured();
 
     }
     @Then("I click on Deals on #3D printer link")
