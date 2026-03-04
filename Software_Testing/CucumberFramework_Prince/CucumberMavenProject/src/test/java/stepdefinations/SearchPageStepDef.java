@@ -28,7 +28,7 @@ public class SearchPageStepDef  {
 	@And("Click on Search")
 	public void ClickOn_Searchbutton() throws InterruptedException {
 		searchpage.ClickOnSearchbutton();
-			Thread.sleep(4000);
+			Thread.sleep(3000);
 	}
 	@Then("I should see the result in search page for validation (.*)$")
 	public void I_should_see_the_result_in_search_page_for_validation(String Product) throws InterruptedException {
@@ -43,7 +43,7 @@ public class SearchPageStepDef  {
 	}
 
 	@And("I enter Year To (.*)$")
-	public void iEnterYearToYearTo(int Year) throws InterruptedException {
+	public void iEnterYearTo(int Year) throws InterruptedException {
 		searchpage.selectYearTo(Year);
 
 	}
@@ -57,6 +57,7 @@ public class SearchPageStepDef  {
 	@Then("I click on Find Vehicle button")
 	public void iClickOnDindVehicleButton() {
 		searchpage.ClickOnFindVehicleButton();
+
 
 	}
 

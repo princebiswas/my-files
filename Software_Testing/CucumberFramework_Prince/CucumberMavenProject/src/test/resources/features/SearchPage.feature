@@ -16,8 +16,8 @@ Feature: Test all scenario for Find a Vehicle
     Then I click on Find Vehicle button
 
     Examples:
-      |Product    |Make|Model|YearTo|YearFrom|YearTo|Distance|
-      |Motorcycle |Audi|A1   |2000  |2000    |2020 |1000 miles|
+      |Product    |Make|Model|YearTo|YearFrom|Distance|
+      |Motorcycle |AJS |37A   |2000 |2010    |1000 miles|
 
 
 

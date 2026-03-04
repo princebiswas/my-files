@@ -42,6 +42,6 @@ public class SearchPage extends BasePage {
         Thread.sleep(1000);
         getElement("make_Dropdown").click();
         Thread.sleep(2000);
-        SelectDropdownByValue("make_Dropdown", Make);
+        SelectDropdownByVisibleText("make_Dropdown", Make);
     }
 }

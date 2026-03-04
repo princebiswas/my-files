@@ -36,6 +36,10 @@
   "make_Dropdown": {
     "type": "xpath",
     "value":"//select[@aria-label='Make']"
+  },
+  "model_Dropdown": {
+    "type": "xpath",
+    "value":"//select[@aria-label='Model']"
   }
 
 

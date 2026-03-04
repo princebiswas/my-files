@@ -54,11 +54,11 @@ public class TestHooks {
 	@After
 	public void CleanUp()
 	{
-		if(driver!=null)
-		{
-			driver.quit();
-		}
-		
+//		if(driver!=null)
+//		{
+//			driver.quit();
+//		}
+//
 	}
 
 }

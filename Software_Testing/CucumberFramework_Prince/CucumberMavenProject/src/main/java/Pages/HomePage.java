@@ -37,7 +37,7 @@ public class HomePage extends BasePage {
 
 	public void selectModel(String Model) {
 
-		SelectDropdownByVisibleText("SelectModelFromDropdown", Model);
+		SelectDropdownByValue("model_Dropdown", Model);
 	}
 
 
