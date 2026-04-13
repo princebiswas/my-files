@@ -1,0 +1,210 @@
+# Created at 2026-01-22T21:03:55.663
+TestSet has not finished before stream error has appeared >> initializing exit by non-null configuration: DEFAULT
+java.io.EOFException
+	at java.base/java.io.DataInputStream.readFully(DataInputStream.java:210)
+	at java.base/java.io.DataInputStream.readInt(DataInputStream.java:385)
+	at org.apache.maven.surefire.booter.MasterProcessCommand.decode(MasterProcessCommand.java:115)
+	at org.apache.maven.surefire.booter.CommandReader$CommandRunnable.run(CommandReader.java:391)
+	at java.base/java.lang.Thread.run(Thread.java:1583)
+
+
+# Created at 2026-01-22T21:03:58.131
+Unexpected IOException with stream:   ✔ Given I am on the Amazon Homepage                    # stepdefinations.SearchSteps.i_am_on_the_amazonhomepage()
+
+
+# Created at 2026-01-22T21:04:02.486
+Unexpected IOException with stream:   ✔ When I search for "Laptop"                           # stepdefinations.SearchSteps.i_search_for(java.lang.String)
+
+
+# Created at 2026-01-22T21:04:02.658
+Unexpected IOException with stream:   ✔ Then I should see result for "Laptop" on search page # stepdefinations.SearchSteps.i_should_result_for(java.lang.String)
+
+
+# Created at 2026-01-22T21:04:03.322
+Unexpected IOException: 6,1,runner.LoginRunner,runScenario(runner.LoginRunner),null,null,null
+
+
+# Created at 2026-01-22T21:04:03.325
+Unexpected IOException: 5,1,runner.LoginRunner,runScenario(runner.LoginRunner),cucumber,null,null
+
+
+# Created at 2026-01-22T21:04:03.334
+Unexpected IOException with stream: 
+@smoke
+
+
+# Created at 2026-01-22T21:04:03.334
+Unexpected IOException with stream: Scenario Outline: Search for product                     # file:///C:/Users/aliaz/Downloads/CucumberFramework_Prince/CucumberMavenProject/src/test/resources/features/Search.feature:18
+
+
+# Created at 2026-01-22T21:04:05.879
+Unexpected IOException with stream: Jan 22, 2026 9:04:05 PM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+WARNING: Unable to find an exact match for CDP version 143, returning the closest version; found: 140; Please update to a Selenium version that supports CDP version 143
+
+
+# Created at 2026-01-22T21:04:13.892
+Unexpected IOException with stream:   ✔ Given I am on the Amazon Homepage                    # stepdefinations.SearchSteps.i_am_on_the_amazonhomepage()
+
+
+# Created at 2026-01-22T21:04:13.950
+Unexpected IOException with stream:   ✘ When I search for "laptop"                           # stepdefinations.SearchSteps.i_search_for(java.lang.String)
+
+
+# Created at 2026-01-22T21:04:13.953
+Unexpected IOException with stream:         org.openqa.selenium.NoSuchWindowException: no such window: target window already closed
+        from unknown error: web view not found
+          (Session info: chrome=143.0.7499.193)
+        Build info: version: '4.36.0', revision: '6d115cfd87'
+        System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '21.0.9'
+        Driver info: org.openqa.selenium.chrome.ChromeDriver
+        Command: [1e59fa3748ddd04588b56a35b05988c0, findElement {value=twotabsearchtextbox, using=id}]
+        Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 143.0.7499.193, chrome: {chromedriverVersion: 143.0.7499.192 (be2c1f4fd45..., userDataDir: C:\Users\aliaz\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:55359}, goog:processID: 50328, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:55359/devtoo..., se:cdpVersion: 143.0.7499.193, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+        Session ID: 1e59fa3748ddd04588b56a35b05988c0
+        	at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:62)
+        	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:502)
+        	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:486)
+        	at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
+        	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
+        	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
+        	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:215)
+        	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
+        	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
+        	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:557)
+        	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:165)
+        	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:66)
+        	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:380)
+        	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:374)
+        	at Pages.BasePage.getElement(BasePage.java:32)
+        	at Pages.HomePage.SearchFor(HomePage.java:15)
+        	at stepdefinations.SearchSteps.i_search_for(SearchSteps.java:32)
+        	at ✽.I search for "laptop"(file:///C:/Users/aliaz/Downloads/CucumberFramework_Prince/CucumberMavenProject/src/test/resources/features/Search.feature:12)
+
+
+# Created at 2026-01-22T21:04:13.971
+Unexpected IOException with stream:         org.openqa.selenium.NoSuchWindowException: no such window: target window already closed
+        from unknown error: web view not found
+          (Session info: chrome=143.0.7499.193)
+        Build info: version: '4.36.0', revision: '6d115cfd87'
+        System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '21.0.9'
+        Driver info: org.openqa.selenium.chrome.ChromeDriver
+        Command: [1e59fa3748ddd04588b56a35b05988c0, screenshot {}]
+        Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 143.0.7499.193, chrome: {chromedriverVersion: 143.0.7499.192 (be2c1f4fd45..., userDataDir: C:\Users\aliaz\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:55359}, goog:processID: 50328, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:55359/devtoo..., se:cdpVersion: 143.0.7499.193, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+        Session ID: 1e59fa3748ddd04588b56a35b05988c0
+        	at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:62)
+        	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:502)
+        	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:486)
+        	at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
+        	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
+        	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
+        	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:215)
+        	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
+        	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
+        	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:557)
+        	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:630)
+        	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:634)
+        	at org.openqa.selenium.remote.RemoteWebDriver.getScreenshotAs(RemoteWebDriver.java:346)
+        	at hooks.TestHooks.takeScreenshotonFailure(TestHooks.java:34)
+
+
+# Created at 2026-01-22T21:04:13.973
+Unexpected IOException with stream:   ↷ Then I should see result for "laptop" on search page # stepdefinations.SearchSteps.i_should_result_for(java.lang.String)
+
+
+# Created at 2026-01-22T21:04:14.266
+Unexpected IOException: 8,1,runner.LoginRunner,runScenario(runner.LoginRunner),null,no such window: target window already closed\000Afrom unknown error: web view not found\000A  (Session info: chrome=143.0.7499.193)\000ABuild info: version: '4.36.0'\002C revision: '6d115cfd87'\000ASystem info: os.name: 'Windows 11'\002C os.arch: 'amd64'\002C os.version: '10.0'\002C java.version: '21.0.9'\000ADriver info: org.openqa.selenium.chrome.ChromeDriver\000ACommand: [1e59fa3748ddd04588b56a35b05988c0\002C findElement {value=twotabsearchtextbox\002C using=id}]\000ACapabilities {acceptInsecureCerts: false\002C browserName: chrome\002C browserVersion: 143.0.7499.193\002C chrome: {chromedriverVersion: 143.0.7499.192 (be2c1f4fd45...\002C userDataDir: C:\005CUsers\005Caliaz\005CAppData\005CLoca...}\002C fedcm:accounts: true\002C goog:chromeOptions: {debuggerAddress: localhost:55359}\002C goog:processID: 50328\002C networkConnectionEnabled: false\002C pageLoadStrategy: normal\002C platformName: windows\002C proxy: Proxy()\002C se:cdp: ws://localhost:55359/devtoo...\002C se:cdpVersion: 143.0.7499.193\002C setWindowRect: true\002C strictFileInteractability: false\002C timeouts: {implicit: 0\002C pageLoad: 300000\002C script: 30000}\002C unhandledPromptBehavior: dismiss and notify\002C webauthn:extension:credBlob: true\002C webauthn:extension:largeBlob: true\002C webauthn:extension:minPinLength: true\002C webauthn:extension:prf: true\002C webauthn:virtualAuthenticators: true}\000ASession ID: 1e59fa3748ddd04588b56a35b05988c0,null,no such window: target window already closed\000Afrom unknown error: web view not found\000A  (Session info: chrome=143.0.7499.193)\000ABuild info: version: '4.36.0'\002C revision: '6d115cfd87'\000ASystem info: os.name: 'Windows 11'\002C os.arch: 'amd64'\002C os.version: '10.0'\002C java.version: '21.0.9'\000ADriver info: org.openqa.selenium.chrome.ChromeDriver\000ACommand: [1e59fa3748ddd04588b56a35b05988c0\002C findElement {value=twotabsearchtextbox\002C using=id}]\000ACapabilities {acceptInsecureCerts: false\002C browserName: chrome\002C browserVersion: 143.0.7499.193\002C chrome: {chromedriverVersion: 143.0.7499.192 (be2c1f4fd45...\002C userDataDir: C:\005CUsers\005Caliaz\005CAppData\005CLoca...}\002C fedcm:accounts: true\002C goog:chromeOptions: {debuggerAddress: localhost:55359}\002C goog:processID: 50328\002C networkConnectionEnabled: false\002C pageLoadStrategy: normal\002C platformName: windows\002C proxy: Proxy()\002C se:cdp: ws://localhost:55359/devtoo...\002C se:cdpVersion: 143.0.7499.193\002C setWindowRect: true\002C strictFileInteractability: false\002C timeouts: {implicit: 0\002C pageLoad: 300000\002C script: 30000}\002C unhandledPromptBehavior: dismiss and notify\002C webauthn:extension:credBlob: true\002C webauthn:extension:largeBlob: true\002C webauthn:extension:minPinLength: true\002C webauthn:extension:prf: true\002C webauthn:virtualAuthenticators: true}\000ASession ID: 1e59fa3748ddd04588b56a35b05988c0,LoginRunner.runScenario \00BB NoSuchWindow no such window: target window already c...,org.openqa.selenium.NoSuchWindowException: \000Ano such window: target window already closed\000Afrom unknown error: web view not found\000A  (Session info: chrome=143.0.7499.193)\000ABuild info: version: '4.36.0'\002C revision: '6d115cfd87'\000ASystem info: os.name: 'Windows 11'\002C os.arch: 'amd64'\002C os.version: '10.0'\002C java.version: '21.0.9'\000ADriver info: org.openqa.selenium.chrome.ChromeDriver\000ACommand: [1e59fa3748ddd04588b56a35b05988c0\002C findElement {value=twotabsearchtextbox\002C using=id}]\000ACapabilities {acceptInsecureCerts: false\002C browserName: chrome\002C browserVersion: 143.0.7499.193\002C chrome: {chromedriverVersion: 143.0.7499.192 (be2c1f4fd45...\002C userDataDir: C:\005CUsers\005Caliaz\005CAppData\005CLoca...}\002C fedcm:accounts: true\002C goog:chromeOptions: {debuggerAddress: localhost:55359}\002C goog:processID: 50328\002C networkConnectionEnabled: false\002C pageLoadStrategy: normal\002C platformName: windows\002C proxy: Proxy()\002C se:cdp: ws://localhost:55359/devtoo...\002C se:cdpVersion: 143.0.7499.193\002C setWindowRect: true\002C strictFileInteractability: false\002C timeouts: {implicit: 0\002C pageLoad: 300000\002C script: 30000}\002C unhandledPromptBehavior: dismiss and notify\002C webauthn:extension:credBlob: true\002C webauthn:extension:largeBlob: true\002C webauthn:extension:minPinLength: true\002C webauthn:extension:prf: true\002C webauthn:virtualAuthenticators: true}\000ASession ID: 1e59fa3748ddd04588b56a35b05988c0\000A
+
+
+# Created at 2026-01-22T21:04:14.268
+Unexpected IOException: 5,1,runner.LoginRunner,runScenario(runner.LoginRunner),cucumber,null,null
+
+
+# Created at 2026-01-22T21:04:14.272
+Unexpected IOException with stream: 
+@smoke
+Scenario Outline: Search for product                         # file:///C:/Users/aliaz/Downloads/CucumberFramework_Prince/CucumberMavenProject/src/test/resources/features/Search.feature:19
+
+
+# Created at 2026-01-22T21:04:16.154
+Unexpected IOException with stream: Jan 22, 2026 9:04:16 PM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+WARNING: Unable to find an exact match for CDP version 143, returning the closest version; found: 140; Please update to a Selenium version that supports CDP version 143
+
+
+# Created at 2026-01-22T21:04:25.757
+Unexpected IOException with stream:   ✔ Given I am on the Amazon Homepage                        # stepdefinations.SearchSteps.i_am_on_the_amazonhomepage()
+
+
+# Created at 2026-01-22T21:04:30.570
+Unexpected IOException with stream:   ✔ When I search for "headphones"                           # stepdefinations.SearchSteps.i_search_for(java.lang.String)
+
+
+# Created at 2026-01-22T21:04:30.598
+Unexpected IOException with stream:   ✘ Then I should see result for "headphones" on search page # stepdefinations.SearchSteps.i_should_result_for(java.lang.String)
+        org.openqa.selenium.NoSuchWindowException: no such window: target window already closed
+        from unknown error: web view not found
+          (Session info: chrome=143.0.7499.193)
+        Build info: version: '4.36.0', revision: '6d115cfd87'
+        System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '21.0.9'
+        Driver info: org.openqa.selenium.chrome.ChromeDriver
+        Command: [a85e68219f293432f36d90ee93ca3a04, findElement {value=//span[@class='a-color-state a-text-bold'], using=xpath}]
+        Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 143.0.7499.193, chrome: {chromedriverVersion: 143.0.7499.192 (be2c1f4fd45..., userDataDir: C:\Users\aliaz\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:51083}, goog:processID: 34232, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:51083/devtoo..., se:cdpVersion: 143.0.7499.193, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+        Session ID: a85e68219f293432f36d90ee93ca3a04
+        	at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:62)
+        	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:502)
+        	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:486)
+        	at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
+        	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
+        	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
+        	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:215)
+        	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
+        	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
+        	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:557)
+        	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:165)
+        	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:59)
+        	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:380)
+        	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:374)
+        	at Pages.BasePage.getElement(BasePage.java:34)
+        	at Pages.SearchPage.getSearchHeader(SearchPage.java:14)
+        	at stepdefinations.SearchSteps.i_should_result_for(SearchSteps.java:40)
+        	at ✽.I should see result for "headphones" on search page(file:///C:/Users/aliaz/Downloads/CucumberFramework_Prince/CucumberMavenProject/src/test/resources/features/Search.feature:13)
+
+
+# Created at 2026-01-22T21:04:30.618
+Unexpected IOException with stream:         org.openqa.selenium.NoSuchWindowException: no such window: target window already closed
+        from unknown error: web view not found
+          (Session info: chrome=143.0.7499.193)
+        Build info: version: '4.36.0', revision: '6d115cfd87'
+        System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '21.0.9'
+        Driver info: org.openqa.selenium.chrome.ChromeDriver
+        Command: [a85e68219f293432f36d90ee93ca3a04, screenshot {}]
+        Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 143.0.7499.193, chrome: {chromedriverVersion: 143.0.7499.192 (be2c1f4fd45..., userDataDir: C:\Users\aliaz\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:51083}, goog:processID: 34232, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:51083/devtoo..., se:cdpVersion: 143.0.7499.193, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+        Session ID: a85e68219f293432f36d90ee93ca3a04
+        	at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:62)
+        	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:502)
+        	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:486)
+        	at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
+        	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
+        	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
+        	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:215)
+        	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
+        	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
+        	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:557)
+        	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:630)
+        	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:634)
+        	at org.openqa.selenium.remote.RemoteWebDriver.getScreenshotAs(RemoteWebDriver.java:346)
+        	at hooks.TestHooks.takeScreenshotonFailure(TestHooks.java:34)
+
+
+# Created at 2026-01-22T21:04:31.914
+Unexpected IOException: 8,1,runner.LoginRunner,runScenario(runner.LoginRunner),null,no such window: target window already closed\000Afrom unknown error: web view not found\000A  (Session info: chrome=143.0.7499.193)\000ABuild info: version: '4.36.0'\002C revision: '6d115cfd87'\000ASystem info: os.name: 'Windows 11'\002C os.arch: 'amd64'\002C os.version: '10.0'\002C java.version: '21.0.9'\000ADriver info: org.openqa.selenium.chrome.ChromeDriver\000ACommand: [a85e68219f293432f36d90ee93ca3a04\002C findElement {value=//span[@class='a-color-state a-text-bold']\002C using=xpath}]\000ACapabilities {acceptInsecureCerts: false\002C browserName: chrome\002C browserVersion: 143.0.7499.193\002C chrome: {chromedriverVersion: 143.0.7499.192 (be2c1f4fd45...\002C userDataDir: C:\005CUsers\005Caliaz\005CAppData\005CLoca...}\002C fedcm:accounts: true\002C goog:chromeOptions: {debuggerAddress: localhost:51083}\002C goog:processID: 34232\002C networkConnectionEnabled: false\002C pageLoadStrategy: normal\002C platformName: windows\002C proxy: Proxy()\002C se:cdp: ws://localhost:51083/devtoo...\002C se:cdpVersion: 143.0.7499.193\002C setWindowRect: true\002C strictFileInteractability: false\002C timeouts: {implicit: 0\002C pageLoad: 300000\002C script: 30000}\002C unhandledPromptBehavior: dismiss and notify\002C webauthn:extension:credBlob: true\002C webauthn:extension:largeBlob: true\002C webauthn:extension:minPinLength: true\002C webauthn:extension:prf: true\002C webauthn:virtualAuthenticators: true}\000ASession ID: a85e68219f293432f36d90ee93ca3a04,null,no such window: target window already closed\000Afrom unknown error: web view not found\000A  (Session info: chrome=143.0.7499.193)\000ABuild info: version: '4.36.0'\002C revision: '6d115cfd87'\000ASystem info: os.name: 'Windows 11'\002C os.arch: 'amd64'\002C os.version: '10.0'\002C java.version: '21.0.9'\000ADriver info: org.openqa.selenium.chrome.ChromeDriver\000ACommand: [a85e68219f293432f36d90ee93ca3a04\002C findElement {value=//span[@class='a-color-state a-text-bold']\002C using=xpath}]\000ACapabilities {acceptInsecureCerts: false\002C browserName: chrome\002C browserVersion: 143.0.7499.193\002C chrome: {chromedriverVersion: 143.0.7499.192 (be2c1f4fd45...\002C userDataDir: C:\005CUsers\005Caliaz\005CAppData\005CLoca...}\002C fedcm:accounts: true\002C goog:chromeOptions: {debuggerAddress: localhost:51083}\002C goog:processID: 34232\002C networkConnectionEnabled: false\002C pageLoadStrategy: normal\002C platformName: windows\002C proxy: Proxy()\002C se:cdp: ws://localhost:51083/devtoo...\002C se:cdpVersion: 143.0.7499.193\002C setWindowRect: true\002C strictFileInteractability: false\002C timeouts: {implicit: 0\002C pageLoad: 300000\002C script: 30000}\002C unhandledPromptBehavior: dismiss and notify\002C webauthn:extension:credBlob: true\002C webauthn:extension:largeBlob: true\002C webauthn:extension:minPinLength: true\002C webauthn:extension:prf: true\002C webauthn:virtualAuthenticators: true}\000ASession ID: a85e68219f293432f36d90ee93ca3a04,LoginRunner.runScenario \00BB NoSuchWindow no such window: target window already c...,org.openqa.selenium.NoSuchWindowException: \000Ano such window: target window already closed\000Afrom unknown error: web view not found\000A  (Session info: chrome=143.0.7499.193)\000ABuild info: version: '4.36.0'\002C revision: '6d115cfd87'\000ASystem info: os.name: 'Windows 11'\002C os.arch: 'amd64'\002C os.version: '10.0'\002C java.version: '21.0.9'\000ADriver info: org.openqa.selenium.chrome.ChromeDriver\000ACommand: [a85e68219f293432f36d90ee93ca3a04\002C findElement {value=//span[@class='a-color-state a-text-bold']\002C using=xpath}]\000ACapabilities {acceptInsecureCerts: false\002C browserName: chrome\002C browserVersion: 143.0.7499.193\002C chrome: {chromedriverVersion: 143.0.7499.192 (be2c1f4fd45...\002C userDataDir: C:\005CUsers\005Caliaz\005CAppData\005CLoca...}\002C fedcm:accounts: true\002C goog:chromeOptions: {debuggerAddress: localhost:51083}\002C goog:processID: 34232\002C networkConnectionEnabled: false\002C pageLoadStrategy: normal\002C platformName: windows\002C proxy: Proxy()\002C se:cdp: ws://localhost:51083/devtoo...\002C se:cdpVersion: 143.0.7499.193\002C setWindowRect: true\002C strictFileInteractability: false\002C timeouts: {implicit: 0\002C pageLoad: 300000\002C script: 30000}\002C unhandledPromptBehavior: dismiss and notify\002C webauthn:extension:credBlob: true\002C webauthn:extension:largeBlob: true\002C webauthn:extension:minPinLength: true\002C webauthn:extension:prf: true\002C webauthn:virtualAuthenticators: true}\000ASession ID: a85e68219f293432f36d90ee93ca3a04\000A
+
+
+# Created at 2026-01-22T21:04:31.917
+Unexpected IOException: 5,1,runner.LoginRunner,runScenario(runner.LoginRunner),cucumber,null,null
+
+
+# Created at 2026-01-22T21:04:31.923
+Unexpected IOException with stream: 
+@smoke
+Scenario Outline: Search for product                         # file:///C:/Users/aliaz/Downloads/CucumberFramework_Prince/CucumberMavenProject/src/test/resources/features/Search.feature:20
+
+

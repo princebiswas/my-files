@@ -40,6 +40,10 @@
   "model_Dropdown": {
     "type": "xpath",
     "value":"//select[@aria-label='Model']"
+  },
+  "zipCode": {
+    "type": "xpath",
+    "value":"//input[@aria-label='ZIP Code']"
   }
 
 

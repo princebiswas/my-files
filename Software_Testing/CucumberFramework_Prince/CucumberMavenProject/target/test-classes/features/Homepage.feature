@@ -6,8 +6,8 @@ Feature: Test all scenario for Home Page
 #    And I click on all available links on the page
 	And I click on Shop by category
 	And I select a product from Motors <Product1>
-    And I select Make from dropdown <Make>
-    And I select Model from dropdown <Model>
+    And I select Make from dropdown_HP <Make>
+    And I select Model from dropdown_HP <Model>
     And I enter ZIP code
     And I select Conditions from dropdown <Conditions>
 	Examples:

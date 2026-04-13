@@ -1,0 +1,14 @@
+
+
+TestNg.xml--- CucumberRunner ---- Feature --- Step Defination-- Test Hooks --- 
+WebDriver Initalization ---- Page Actions --- Base page --- 
+locator reader file (Json file)--- json file of Locator
+
+
+
+key value pair
+
+{
+
+"type":"value"
+}
