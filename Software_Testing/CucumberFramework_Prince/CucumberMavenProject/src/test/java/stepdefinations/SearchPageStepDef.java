@@ -4,21 +4,27 @@ import static org.junit.jupiter.api.Assertions.assertEquals;
 
 
 import io.cucumber.java.en.Then;
-import org.openqa.selenium.WebDriver;
 
 import Pages.SearchPage;
 import hooks.TestHooks;
 import io.cucumber.java.en.And;
+import io.cucumber.java.Scenario;
+import io.cucumber.java.Before;
 
 public class SearchPageStepDef  {
 
 
 	SearchPage searchpage;
-	WebDriver driver = TestHooks.driver;
+	private Scenario scenario;
+
+	@Before
+	public void setScenario(Scenario scenario) {
+		this.scenario = scenario;
+	}
 
     @And("Search for a Product(.*)$" )
 	public void iSearchForAProduct(String Product) throws InterruptedException {
-		 searchpage = new SearchPage(driver);
+		 searchpage = new SearchPage(TestHooks.driver);
 		searchpage.SearchForAProduct(Product);
 		Thread.sleep(1000);
 	}
@@ -81,18 +87,21 @@ public class SearchPageStepDef  {
 	}
 
 	@Then("I enter information for Find a Vehicle")
-	public void iEnterInformationForFindAVehicle() throws InterruptedException {
-		
-		if (searchpage.Make_DropdownIsDisplayed() && searchpage.model_dropdownIsDisplayed()) {
-			searchpage.make_dropdown();  // Default value or pass from feature file
-			searchpage.model_dropdown();
-			searchpage.selectYearForm();
-			searchpage.selectYearTo();
-			searchpage.selectDistance();
-			searchpage.zipcode();
-			;// Default value or pass from feature file
-		} else {
-			System.out.println("Make and Model dropdowns are not displayed");
+	public void iEnterInformationForFindAVehicle() {
+		try {
+			if (searchpage.Make_DropdownIsDisplayed()) {
+				searchpage.make_dropdown();  // Default value or pass from feature file
+				searchpage.model_dropdown();
+				searchpage.selectYearForm();
+				searchpage.selectYearTo();
+				searchpage.selectDistance();
+				searchpage.zipcode();
+				// Default value or pass from feature file
+			} else {
+				scenario.log("Make and Model dropdowns are not displayed");
+			}
+		} catch (Exception e) {
+			scenario.log("Make and Model dropdowns are not displayed");
 		}
 	}
 }

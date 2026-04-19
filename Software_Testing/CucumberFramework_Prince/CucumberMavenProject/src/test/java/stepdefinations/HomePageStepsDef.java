@@ -6,19 +6,15 @@ import Pages.HomePage;
 import hooks.TestHooks;
 import io.cucumber.java.en.And;
 import io.cucumber.java.en.Given;
-import org.openqa.selenium.WebDriver;
-
-import static org.junit.jupiter.api.Assertions.assertEquals;
 
 public class HomePageStepsDef  {
 
     HomePage homepage;
-    WebDriver driver = TestHooks.driver;
 
     @Given("I navigate to the Ebay UI")
     public void iNavigateToTheEbayUI() {
        // driver.get("https://www.ebay.com/");
-        homepage = new HomePage(driver);
+        homepage = new HomePage(TestHooks.driver);
     }
     @And("I click on Shop by category")
     public void iClickOnShopByCategory() throws InterruptedException {
