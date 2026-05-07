@@ -6,6 +6,7 @@ import org.openqa.selenium.WebElement;
 
 import org.openqa.selenium.support.ui.Select;
 import utility.LocatorReader;
+import utility.WaitUtils;
 
 public class BasePage {
 	public WebDriver driver;
@@ -17,6 +18,25 @@ public class BasePage {
 	this.locatorReader=  new LocatorReader("Locators\\"+locatorFileName);
    // this.locatorReader=  new LocatorReader("Locators\\homepage_locator.json");
 
+	}
+
+	public WebElement getElementVisible(String key)
+	{
+		String type = locatorReader.getLocatorType(key);
+		String value = locatorReader.getLocatorValue(key);
+		By locator = getLocator(type, value);
+		return WaitUtils.waitForElementVisibility(driver, locator);
+	}
+
+	private By getLocator(String type, String value) {
+		switch(type) {
+		case "id": return By.id(value);
+		case "name": return By.name(value);
+		case "xpath": return By.xpath(value);
+		case "css": return By.cssSelector(value);
+		case "linktext": return By.linkText(value);
+		default: throw new IllegalArgumentException("Unsupported Locator Type: " + type);
+		}
 	}
 	
 	public WebElement getElement(String key)
